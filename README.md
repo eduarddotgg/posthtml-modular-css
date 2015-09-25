@@ -1,7 +1,8 @@
 # POSTHTML MODULAR CSS
 <img align="right" width="57" height="108" title="Dev Kit Main Logo" src="http://adm-designhouse.com/dev-kit-main-logo.png">  
 
-PostHTML Modular CSS is a PostHTML plugin. The main idea is to help you make yor css modular.  
+PostHTML Modular CSS is a PostHTML plugin.  
+The main idea is to help you make yor css modular.  
 With PostHTML it allows to include your css right in html.
 
 
@@ -31,7 +32,7 @@ gulp.task('posthtml', function () {
 	<p>Some text</p>
 </div>
 
-/*css/box.css*/
+/*box.css*/
 .box{
 	background: #ccc;
 	margin: 0 auto;
@@ -46,7 +47,7 @@ gulp.task('posthtml', function () {
 <css src="css/button.css"></css>
 <a href="http://best-url-ever.com" class="button">button</a>
 
-/*css/button.css*/
+/*button.css*/
 .button{
 	display: block;
 	height: 40px;
