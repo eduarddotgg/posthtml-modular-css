@@ -77,5 +77,6 @@ all included css files will be compiled to external one:
 	width: 200px;
 }
 ```
+[example with jade](https://github.com/admdh/posthtml-modular-css-example)
 
 You just keep your css in one place with your html. From now on ther is no need to make separate file with css imports. If you delete  your html file no extra css will be generated.
