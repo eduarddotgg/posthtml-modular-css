@@ -1,9 +1,9 @@
 {
   "name": "posthtml-modular-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "posthtml modular css plugin",
   "main": "index.js",
-  "devDependencies": {
+  "dependencies": {
     "concat": "^1.0.0"
   },
   "scripts": {
@@ -14,12 +14,15 @@
   },
   "keywords": [
     "html",
-    "postproccessor"
+    "postproccessor",
+    "modular css",
+    "modular",
+    "css"
   ],
   "author": "ADM DESIGNHOUSE <admdh.com@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/admdh/posthtml-modular-css"
+    "url": "https://github.com/admdh/posthtml-modular-css/issues"
   },
   "homepage": "https://github.com/admdh/posthtml-modular-css"
 }
