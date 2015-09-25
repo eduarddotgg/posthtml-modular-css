@@ -1,24 +1,21 @@
 var concat = require('concat');//
-module.exports = function(tree) {
-	// options = options || {
-		// outputCSS: 'style.css'
-	// };
+module.exports = function(options) {
+    options = options || {
+        outputCSS: 'style.css'
+    };
 
-	return function(tree){
+    return function(tree){
 
-		var cssFile = []
+        var cssFile = [];
 
-	    tree.walk(function(node) {
-	        if (node.tag == 'css') {
-				cssFile.push(node.attrs.src);
-				console.log(node.tag);
-	        }
-	        return '';
-	    });
+        tree.match({ tag: 'css' }, function(node) {
+            cssFile.push(node.attrs.src);
+            return '';
+        });
 
-		concat(cssFile, 'style.css', function (error) {
-  	// 		console.log('css file created');
-		});
+        concat(cssFile, options.outputCSS, function (error) {
+            console.log('css file create d');
+        });
 
-	}
-}
+    };
+};

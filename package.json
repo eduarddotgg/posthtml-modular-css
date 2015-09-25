@@ -4,9 +4,6 @@
   "description": "posthtml modular css plugin",
   "main": "index.js",
   "dependencies": {
-  },
-  "devDependencies": {
-    "posthtml": "^0.0.2",
     "concat": "^1.0.0"
   },
   "scripts": {
