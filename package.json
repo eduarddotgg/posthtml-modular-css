@@ -1,9 +1,9 @@
 {
   "name": "posthtml-modular-css",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "posthtml modular css plugin",
   "main": "index.js",
-  "dependencies": {
+  "devDependencies": {
     "concat": "^1.0.0"
   },
   "scripts": {

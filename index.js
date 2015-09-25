@@ -16,7 +16,7 @@ module.exports = function(options) {
         });
 
         concat(cssFile, options.outputCSS, function (error) {
-            console.log('css file create d');
+            console.log('New ' + options.outputCSS + ' file created');
         });
 
     };
