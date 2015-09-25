@@ -13,11 +13,14 @@ var posthtml = require('gulp-posthtml');
 
 gulp.task('posthtml', function () {
     var plugins = [
-		require('posthtml-modular-css')({outputCSS: 'style.css'})
+		require('posthtml-modular-css')({
+            srcFolder: __dirname + '/webroot/',
+            outputCSS: './dest/style.css'
+        })
     ];
     var options = {};
 
-    return gulp.src('./index.html')
+    return gulp.src('./webroot/index.html')
         .pipe(posthtml(plugins, options))
         .pipe(gulp.dest('./dest'));
 });

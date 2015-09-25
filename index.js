@@ -1,6 +1,8 @@
-var concat = require('concat');//
+var concat = require('concat');
+
 module.exports = function(options) {
     options = options || {
+        srcFolder: __dirname + 'webroot',
         outputCSS: 'style.css'
     };
 
@@ -9,7 +11,7 @@ module.exports = function(options) {
         var cssFile = [];
 
         tree.match({ tag: 'css' }, function(node) {
-            cssFile.push(node.attrs.src);
+            cssFile.push(options.srcFolder + node.attrs.src);
             return '';
         });
 
