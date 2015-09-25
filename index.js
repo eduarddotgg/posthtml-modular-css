@@ -1,4 +1,4 @@
-var concat = require('concat');
+var concat = require('concatenate-files');
 
 module.exports = function(options) {
     options = options || {
@@ -16,7 +16,7 @@ module.exports = function(options) {
         });
 
         concat(cssFile, options.outputCSS, function (error) {
-            console.log('New ' + options.outputCSS + ' file created');
+            console.log('CSS file created');
         });
 
     };
