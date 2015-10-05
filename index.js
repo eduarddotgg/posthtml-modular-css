@@ -1,12 +1,12 @@
 var concat = require('concatenate-files');
 
-module.exports = function posthtmlModularCss(options) {
+module.exports = function (options) {
     options = options || {
         srcFolder: __dirname + 'webroot',
         outputCSS: 'style.css'
     };
 
-    return function(tree){
+    return function posthtmlModularCss(tree){
 
         var cssFile = [];
 
