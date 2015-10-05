@@ -1,6 +1,6 @@
 var concat = require('concatenate-files');
 
-module.exports = function(options) {
+module.exports = function posthtmlModularCss(options) {
     options = options || {
         srcFolder: __dirname + 'webroot',
         outputCSS: 'style.css'
