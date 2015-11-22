@@ -29,7 +29,7 @@ gulp.task('posthtml', function () {
 ## Example
 ```html
 /*box.html*/
-<css src="css/box.css">
+<css src="css/box.css"></css>
 <div class="box">
 	<h1>title</h1>
 	<p>Some text</p>
@@ -47,7 +47,7 @@ gulp.task('posthtml', function () {
 ```
 ```html
 /*button.html*/
-<css src="css/button.css">
+<css src="css/button.css"></css>
 <a href="http://best-url-ever.com" class="button">button</a>
 
 /*button.css*/
